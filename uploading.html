@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;  /*align text in centre*/
+        }
+
+        .container{
+            color: white;
+            width: 60%;
+            border: 9px solid greenyellow;
+            border-radius: 20px;
+
+            background-color: rgb(43, 42, 42);
+
+            margin: auto auto;   /*spacing after text boundary/box*/
+            padding: 1% 2%;    /*spacing after text*/
+        }
+
+        .item{
+            font-family: 'Bruno Ace', cursive;
+            text-align: center;
+
+            color: white;
+            border: 5px solid rgb(247, 172, 247);
+            border-radius: 15px;
+            margin-top:2%;
+            margin-bottom: 3%;
+            padding: 3.5%  7%;      /* "3.5 is top n bottom "   "7% is left n right"*/
+            background-color: black;
+        }
+
+        #fruit{
+            float: left;
+            width: 49%;
+        }
+
+        #computer{
+            float: right;
+            width: 49%;
+        }
+
+        #stationary{
+            clear: both;
+            width: 100%;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to This </h1>
+
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi rem aliquid illum cum dignissimos ullam quis officia repellat accusantium omnis temporibus ipsa, corporis praesentium, cumque, optio sunt consectetur beatae doloremque vel perferendis enim. Repellendus perferendis ab asperiores aliquid atque sint ipsum esse impedit odio accusantium, reiciendis recusandae repudiandae sed.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi rem aliquid illum cum dignissimos ullam quis officia repellat accusantium omnis temporibus ipsa, corporis praesentium, cumque, optio sunt consectetur beatae doloremque vel perferendis enim. Repellendus perferendis ab asperiores aliquid atque sint ipsum esse impedit odio accusantium, reiciendis recusandae repudiandae sed.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi rem aliquid illum cum dignissimos ullam quis officia repellat accusantium omnis temporibus ipsa, corporis praesentium, cumque, optio sunt consectetur beatae doloremque vel perferendis enim. Repellendus perferendis ab asperiores aliquid atque sint ipsum esse impedit odio accusantium, reiciendis recusandae repudiandae sed.
+            </p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi rem aliquid illum cum dignissimos ullam quis officia repellat accusantium omnis temporibus ipsa, corporis praesentium, cumque, optio sunt consectetur beatae doloremque vel perferendis enim. Repellendus perferendis ab asperiores aliquid atque sint ipsum esse impedit odio accusantium, reiciendis recusandae repudiandae sed.
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
