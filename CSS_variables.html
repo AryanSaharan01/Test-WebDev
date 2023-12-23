@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS vriables</title>
 
     <style>
-
-:root{
-/* here we are declaring universal variables....
+        :root {
+            /* here we are declaring universal variables....
 in this we can declare anything like colour,margin, padding, width....etc */
 
---defpad: 20px;
---brdrds: 30px;
---navclr: purple;
---usclr: rgba(226, 73, 226, 0.889);
-}
+            --defpad: 20px;
+            --brdrds: 30px;
+            --navclr: purple;
+            --usclr: rgba(226, 73, 226, 0.889);
+        }
 
-.nav{
-    background-color: var(--navclr);
-    border-radius: var(--brdrds);
+        .nav {
+            background-color: var(--navclr);
+            border-radius: var(--brdrds);
 
-}
-ul{
-    display: flex;
-}
-li{
-    list-style: none;
-    color: white;
-    padding: 8px 10px;
+        }
 
-    /*padding: top, right, bottom, left*/
-    /* padding: 10px 5px 10px 15px;     */
-}
+        ul {
+            display: flex;
+        }
 
-ul li:first-child{
-    border-radius: var(--brdrds);
-    color: black;
-    background-color: aquamarine;
-}
+        li {
+            list-style: none;
+            color: white;
+            padding: 8px 10px;
 
-.container{
-    border-radius: var(--brdrds);
-    padding: var(--defpad);
-    color: beige;
-    background-color:var(--usclr)
-}
+            /*padding: top, right, bottom, left*/
+            /* padding: 10px 5px 10px 15px;     */
+        }
+
+        ul li:first-child {
+            border-radius: var(--brdrds);
+            color: black;
+            background-color: aquamarine;
+        }
+
+        .container {
+            border-radius: var(--brdrds);
+            padding: var(--defpad);
+            color: beige;
+            background-color: var(--usclr)
+        }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
@@ -59,7 +62,11 @@ ul li:first-child{
     </div>
 
     <div class="container">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui assumenda aliquid odit? Suscipit ullam sed, et placeat consequatur quia quos eos aperiam at, cumque maiores, delectus necessitatibus odio. Voluptatem cum fuga reiciendis reprehenderit possimus aliquam obcaecati ducimus molestias aliquid, libero soluta repellendus dignissimos sint non delectus vitae, quas dolorum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui assumenda aliquid odit? Suscipit ullam sed, et
+        placeat consequatur quia quos eos aperiam at, cumque maiores, delectus necessitatibus odio. Voluptatem cum fuga
+        reiciendis reprehenderit possimus aliquam obcaecati ducimus molestias aliquid, libero soluta repellendus
+        dignissimos sint non delectus vitae, quas dolorum?
     </div>
 </body>
+
 </html>
