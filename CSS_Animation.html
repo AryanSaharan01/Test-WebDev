@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .container {
+            height: 70vh;
+            width: 60vw;
+            background-color: rgb(14, 92, 63);
+        }
+
+        .box {
+            height: 12vh;
+            width: 12vw;
+            background-color: aquamarine;
+            border: 2px solid red;
+
+            animation-name: AryanAni;
+            animation-duration: 1.5s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            /* animation-timing-function: ease-in-out; */
+            animation-timing-function: cubic-bezier(0, 0, 0.23, 1.12);
+            animation-delay: 0.5s;
+            animation-direction: alternate-reverse;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        @keyframes AryanAni {
+            from {}
+
+            to {
+                transform: translateX(300px) translateY(100px);
+                background-color: rgb(220, 250, 86);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>BOX</h1>
+        </div>
+    </div>
+</body>
+
+</html>
